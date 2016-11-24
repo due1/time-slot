@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<project name="Date Range" xmlns="http://maven.apache.org/DECORATION/1.0.0"
+<project name="Time Slot" xmlns="http://maven.apache.org/DECORATION/1.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
 
     <bannerLeft>
-        <name>Date Range</name>
+        <name>Time Slot</name>
         <src>images/bfh-ti-de.gif</src>
         <href>http://www.ti.bfh.ch</href>
     </bannerLeft>

@@ -1,5 +1,5 @@
-The Project Documentation of the Date Range
+The Project Documentation of Time Slot
 
-		A small library dealing with date ranges. Useful for the
+		A small library dealing with time slots. Useful for the
 treatment of recurring events. See also
 {{{http://martinfowler.com/apsupp/recurring.pdf}Recurring Events for Calendars}}.
