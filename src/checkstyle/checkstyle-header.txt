@@ -1,0 +1,11 @@
+^/\*$
+^ \* Copyright \(c\) 2016 Berner Fachhochschule, Switzerland\.$
+^ \*$
+^ \* Project Time Slot\.$
+^ \*$
+^ \* A small library dealing with time slots\. Useful for the treatment of$
+^ \* recurring events\. See also http://martinfowler\.com/apsupp/recurring\.pdf$
+^ \*$
+^ \* Distributable under GPL license\. See terms of license at gnu\.org\.$
+^ \*/$
+^package 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project name="Date Range" xmlns="http://maven.apache.org/DECORATION/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
+
+    <bannerLeft>
+        <name>Date Range</name>
+        <src>images/bfh-ti-de.gif</src>
+        <href>http://www.ti.bfh.ch</href>
+    </bannerLeft>
+
+    <version position="right" />
+
+    <body>
+        <breadcrumbs>
+            <item name="BFH-TI" href="http://www.ti.bfh.ch" />
+        </breadcrumbs>
+
+		<menu ref="reports" />
+		<menu name="Additional Reports">
+			<item name="Test Coverage" href="jacoco/index.html" />
+		</menu>
+
+	</body>
+
+	<skin>
+		<groupId>org.apache.maven.skins</groupId>
+		<artifactId>maven-fluido-skin</artifactId>
+		<version>1.4</version>
+	</skin>
+</project>

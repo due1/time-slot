@@ -1,0 +1,5 @@
+The Project Documentation of the Date Range
+
+		A small library dealing with date ranges. Useful for the
+treatment of recurring events. See also
+{{{http://martinfowler.com/apsupp/recurring.pdf}Recurring Events for Calendars}}.
