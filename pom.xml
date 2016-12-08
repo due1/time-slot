@@ -34,6 +34,14 @@
 		</developer>
 	</developers>
 
+    <distributionManagement>
+        <site>
+            <id>time-slot.local</id>
+            <name>Time Slot Website</name>
+            <url>target/staging/</url>
+        </site>
+    </distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
