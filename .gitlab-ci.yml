@@ -64,7 +64,7 @@ deploy:jdk8:
   # Use stage test here, so the pages job may later pickup the created site.
   stage: test
   script:
-    - 'mvn $MAVEN_CLI_OPTS site:stage -DstagingDirectory=target/staging'
+    - 'mvn $MAVEN_CLI_OPTS site site:stage -DstagingDirectory=target/staging'
   only:
     - master
   # Archive up the built documentation site.
