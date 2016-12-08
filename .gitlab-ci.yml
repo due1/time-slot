@@ -1,4 +1,5 @@
-# This file is a template, and might need editing before it works on your project.
+# This file initiates the CI on http://gitlab.ti.bfh.ch and, on success, publishes the
+# site documentation on http://due1.pages.ti.bfh.ch/time-slot/
 ---
 # Build JAVA applications using Apache Maven (http://maven.apache.org)
 # For docker image tags see https://hub.docker.com/_/maven/
@@ -54,7 +55,6 @@ verify:jdk8:
   <<: *verify
   image: maven:3.3.9-jdk-8
 
-
 # For `master` branch run `mvn deploy` automatically.
 # Here you need to decide whether you want to use JDK7 or 8.
 # To get this working you need to define a volume while configuring your gitlab-ci-multi-runner.
@@ -73,7 +73,6 @@ deploy:jdk8:
     - target/staging
   image: maven:3.3.9-jdk-8
 
-
 pages:
   image: busybox:latest
   stage: deploy
@@ -88,4 +87,3 @@ pages:
     - public
   only:
     - master
-

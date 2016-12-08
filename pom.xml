@@ -38,7 +38,7 @@
         <site>
             <id>time-slot.local</id>
             <name>Time Slot Website</name>
-            <url>target/staging/</url>
+            <url>target/staging</url>
         </site>
     </distributionManagement>
 
@@ -50,7 +50,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 
 	<build>
 		<pluginManagement>
