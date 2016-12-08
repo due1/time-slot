@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>ch.bfh.due1</groupId>
 	<artifactId>time-slot</artifactId>
-	<version>1.0</version>
+	<version>1.1</version>
 	<name>Time Slot</name>
 	<description>
 		This is a small Java library for dealing with time slots which are built upon
@@ -14,6 +14,20 @@
 		<name>BFH</name>
 	</organization>
 	<url>http://www.bfh.ch</url>
+
+	<licenses>
+		<license>
+			<name>GNU GENERAL PUBLIC LICENSE, Version 3</name>
+			<url>https://www.gnu.org/licenses/gpl-3.0.en.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>scm:git:git@github.com/due1/time-slot.git</connection>
+		<developerConnection>scm:git:git@github.com/due1/time-slot.git</developerConnection>
+		<url>https://github.com/due1/time-slot</url>
+	</scm>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -34,13 +48,13 @@
 		</developer>
 	</developers>
 
-    <distributionManagement>
-        <site>
-            <id>time-slot.local</id>
-            <name>Time Slot Website</name>
-            <url>target/staging</url>
-        </site>
-    </distributionManagement>
+	<distributionManagement>
+		<site>
+			<id>time-slot.local</id>
+			<name>Time Slot Website</name>
+			<url>target/staging</url>
+		</site>
+	</distributionManagement>
 
 	<dependencies>
 		<dependency>
@@ -125,13 +139,30 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
-				<version>2.4</version>
+				<version>3.0.1</version>
 				<executions>
 					<execution>
 						<id>attach-sources</id>
-						<phase>verify</phase>
 						<goals>
-							<goal>jar-no-fork</goal>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.10.4</version>
+				<configuration>
+					<!-- See: http://bit.ly/1EWR4gK -->
+					<additionalparam>-Xdoclint:none</additionalparam>
+				</configuration>
+				<executions>
+					<!-- See: http://bit.ly/1hIKf5Z -->
+					<execution>
+						<id>attach-javadoc</id>
+						<goals>
+							<goal>jar</goal>
 						</goals>
 					</execution>
 				</executions>
