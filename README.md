@@ -29,4 +29,6 @@ Then, when using Maven from other projects, simply add the following dependency:
 </dependency>
 ```
 
-You have to replace `VERSION` by the version number of the latest release. Consult `pom.xml`for the latest stable version number.
+You have to replace `VERSION` by the version number of the latest release. Consult `pom.xml` for the latest stable version number.
+
+Note: Since version 1.1, this small library can be found in the Maven Central repository.
